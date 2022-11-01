@@ -1,0 +1,169 @@
+/*
+*
+*
+Если слайдер в нутри Flex контейнера или сам Flex контейнер то контейнеру нужно ставить min-width:0; 
+data-lazy="lazy" для img ленивая загрузка применять к блокам img
+*
+*
+*/
+/* Слайдер */
+ 
+.slick-slider {
+ 
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+    transition: none;
+   
+    
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    transition: none;
+    
+}
+
+
+
+/* Слайд */
+.slick-slide {
+
+    text-align: center;
+}
+
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Общие для стрелок */
+.slick-arrow {
+    background : green;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активная точка */
+.slick-dots li.slick-active {}
+
+/* Активная кнопка */
+.slick-dots li.slick-active button {}
+
+/* Элемент точки */
+.slick-dots li button {}
+
+/*******************************************************************************************************************************/
+
+/* при centerMode true добавляется классslick-center к центральномму слайду */
+  
+/* 
+.slider__item{
+    opacity: 0.1;
+    text-align: center;
+    transition: none;
+}
+.slider__item.slick-center{
+    opacity: 1;
+    transition: none;
+}
+  */
+
+
+
+  .slider .slick-dots    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+   
+   
+    font-size: 0px;
+ 
+  }
+  .slider .slick-dots li button  
+  {
+    font-size: 0px;
+    background-color: #000;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background: #009A44;
+    border-radius: 50%;
+  }
+  .slider .slick-dots li.slick-active button {
+
+    border: 2px solid #009A44;
+    background-color: #fff;
+ 
+  }
+
+  /* Общие для стрелок */
+.slick-arrow {
+    top: -50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: #009A44;
+    font-size: 0;
+    background-image: url('../img/block/slider/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.slick-arrow:hover{
+    opacity: 0.5;
+}
+  /* Стрелка влево */
+  .slider__navic .slick-arrow.slick-prev {
+ 
+
+  margin-right: 20px;
+  transform: rotate(180deg);
+
+ 
+  }
+
+/* Стрелка вправо */
+.slider__navic .slick-arrow.slick-next {
+    margin-left:  20px;
+}
+
+.slider .slick-slide  img{
+    padding: 20px;
+    background: #FFFFFF;
+border-radius: 30px 0px;
+}
